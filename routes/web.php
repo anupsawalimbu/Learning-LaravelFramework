@@ -15,3 +15,5 @@ Route::get('/homepage',function(){
 Route::get("/Product" ,function(){
     return view ("product.product");
 });
+Route::get("product",[\App\Http\Controllers\ProductController::class,'index']);
+Route::get("product/create",[\App\Http\Controllers\ProductController::class,'create']);
