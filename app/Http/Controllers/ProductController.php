@@ -9,6 +9,8 @@ class ProductController extends Controller
    public function create(){
      return view('product.create');
    }
+   Route::get('/category/create');
+   
 }
  
 
